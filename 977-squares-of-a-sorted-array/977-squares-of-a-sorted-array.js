@@ -2,6 +2,8 @@
  * @param {number[]} nums
  * @return {number[]}
  */
+
+//two pointers approach
 var sortedSquares = function(nums) {
     let results = [];
     let left, right;
