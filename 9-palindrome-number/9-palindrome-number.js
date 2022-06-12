@@ -8,20 +8,15 @@ var isPalindrome = function(x) {
     let diffFlag = true;
     
     let stringInt = x.toString();
-    let reversedString = [];
-    
-    
-    for(let i = stringInt.length-1; i >= 0; i--) {
-        reversedString.push(stringInt[i]);
-    }
+    let reverseCounter = stringInt.length-1;
     
     for(let i = 0; i < stringInt.length; i++) {
-        if(reversedString[i] !== stringInt[i]){
+        if(stringInt[i] !== stringInt[reverseCounter]) {
             diffFlag = false;
         }
+        
+        reverseCounter--;
     }
-    
-    console.log('reversedString: ', reversedString, ' stringInt: ', stringInt);
     
     return diffFlag;
 };
