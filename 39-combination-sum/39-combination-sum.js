@@ -5,22 +5,24 @@
  */
 var combinationSum = function(candidates, target) {
     let results = [];
-
-    const dfs = function (index, currentList, currentTotal) {
+    
+    let dfs = function(index, currentTotal, currentList) {
         if(currentTotal === target) {
-          results.push(currentList.slice());
-          return;
-        };
-        if (currentTotal >= target || index >= candidates.length) {
-           return; 
+            results.push(currentList.slice());
+            return;
         }
-          currentList.push(candidates[index]);
-          dfs(index, currentList, currentTotal + candidates[index]);
-          currentList.pop();
-          dfs(index + 1, currentList, currentTotal); 
+        
+        if(index >= candidates.length || currentTotal >= target) {
+            return;
+        }
+        
+        currentList.push(candidates[index]);
+        dfs(index, currentTotal + candidates[index], currentList);
+        currentList.pop();
+        dfs(index+1, currentTotal, currentList);
     }
     
-    dfs(0, [], 0);
-
-    return [...results];
+    dfs(0, 0, []);
+    
+    return results;
 };
