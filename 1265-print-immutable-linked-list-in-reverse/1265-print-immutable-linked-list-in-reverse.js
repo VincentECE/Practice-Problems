@@ -21,9 +21,10 @@
 var printLinkedListInReverse = function(head) {
    
     let innerFunc = function(currentNode) {
+        let nextNode = currentNode.getNext();
         
-        if(currentNode.getNext() !== null) {
-            innerFunc(currentNode.getNext());
+        if(nextNode !== null) {
+            innerFunc(nextNode);
         }
         
         currentNode.printValue();
