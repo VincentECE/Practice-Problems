@@ -3,7 +3,6 @@
  * @return {number}
  */
 var hammingWeight = function(n) {
-    let stringNum = JSON.stringify(n);
     let counter = 0;
     
     n = n.toString(2);
