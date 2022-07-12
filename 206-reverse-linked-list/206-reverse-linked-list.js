@@ -28,7 +28,5 @@ var reverseList = function(head) {
     
     innerFunc(head, null);
     
-    console.log(newHead);
-    
     return newHead;
 }
