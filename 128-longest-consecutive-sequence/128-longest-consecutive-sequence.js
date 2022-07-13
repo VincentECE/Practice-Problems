@@ -13,14 +13,13 @@ var longestConsecutive = function(nums) {
     
     for(let i = 0; i < nums.length; i++) {
         let currentNum = nums[i];
+        let difference = currentNum - previousNum;
         
-        if(currentNum - previousNum !== 1 && currentNum - previousNum !== 0) {
+        if(difference !== 1 && difference !== 0) {
             counter = 1;
-        } else if(currentNum - previousNum === 0) {
-            console.log('same as last num');
-        } else {
+        } else if(difference !== 0) {
             counter++;
-        }
+        } 
         
         if(i === 0) {
             counter = 1;
@@ -29,8 +28,7 @@ var longestConsecutive = function(nums) {
         if(counter > maxCounter) {
             maxCounter = counter;
         }
-        
-        console.log('currentNum', currentNum, 'counter', counter, 'maxCounter', maxCounter);   
+
            previousNum = currentNum;
     }
     
