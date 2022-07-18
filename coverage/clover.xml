@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1658116358725" clover="3.2.0">
-  <project timestamp="1658116358725" name="All files">
-    <metrics statements="44" coveredstatements="44" conditionals="14" coveredconditionals="14" methods="3" coveredmethods="3" elements="61" coveredelements="61" complexity="0" loc="44" ncloc="44" packages="3" files="3" classes="3"/>
+<coverage generated="1658117066536" clover="3.2.0">
+  <project timestamp="1658117066536" name="All files">
+    <metrics statements="55" coveredstatements="55" conditionals="18" coveredconditionals="18" methods="4" coveredmethods="4" elements="77" coveredelements="77" complexity="0" loc="55" ncloc="55" packages="4" files="4" classes="4"/>
     <package name="1-two-sum">
       <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <file name="1-two-sum.js" path="/Users/vince/Documents/Projects/Practice-Problems/1-two-sum/1-two-sum.js">
@@ -62,6 +62,23 @@
         <line num="41" count="8" type="stmt"/>
         <line num="43" count="5" type="stmt"/>
         <line num="48" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="9-palindrome-number">
+      <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="9-palindrome-number.js" path="/Users/vince/Documents/Projects/Practice-Problems/9-palindrome-number/9-palindrome-number.js">
+        <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="18" count="13" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
       </file>
     </package>
   </project>
