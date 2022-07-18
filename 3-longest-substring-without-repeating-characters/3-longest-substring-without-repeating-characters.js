@@ -24,3 +24,5 @@ var lengthOfLongestSubstring = function (s) {
 
   return largestCounter;
 };
+
+module.exports = lengthOfLongestSubstring;
