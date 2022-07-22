@@ -35,18 +35,14 @@ var alertNames = function(keyName, keyTime) {
             let rightTime = timeArr[rightPointer].split(':');
             let rightTimeSeconds = (parseInt(rightTime[0]) * 60 * 60) + (parseInt(rightTime[1]) * 60);
             
-            console.log(name, Math.abs(rightTimeSeconds - leftTimeSeconds))
-            
             if(Math.abs(rightTimeSeconds - leftTimeSeconds) <= 3600) {
                 offenders[name] = true;
-                continue;
+                break;
             }
             
             leftPointer++;
         }
     }
-    
-    console.log(accessMap)
     
     return Object.keys(offenders).sort();
 };
